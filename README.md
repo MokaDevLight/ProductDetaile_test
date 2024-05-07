@@ -6,6 +6,12 @@ where you can view price changes by altering its size and color.
 
 This program utilizes redux state management.
 
+This program is responsive
+
+### `npm i`
+
+To install program dependencies
+
 ### `npm start`
 
 Runs the app in the development mode.\

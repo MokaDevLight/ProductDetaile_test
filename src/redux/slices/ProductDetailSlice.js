@@ -1,6 +1,16 @@
 import { createSlice } from "@reduxjs/toolkit";
 
 const initialState = {
+  titleProduct: "گوشی موبایل سامسونگ مدل S23",
+  descriptionProduct:
+    "گوشی موبایل سامسونگ مدل Galaxy S23 Ultra دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت",
+  featureItem: [
+    { id: 1, key: "حافظه داخلی", value: "250 گیگ" },
+    { id: 2, key: "حافظه رم", value: "250 گیگ" },
+    { id: 3, key: "تعداد سیم کارت", value: "250 گیگ" },
+    { id: 4, key: "بلوتوث", value: "250 گیگ" },
+    { id: 5, key: "حافظه داخلی", value: "250 گیگ" },
+  ],
   colorOption: [
     { value: "RED", label: "قرمز", addPrice: 4729000 },
     { value: "BLUE", label: "آبی", addPrice: 4623000 },

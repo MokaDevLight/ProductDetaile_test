@@ -14,15 +14,8 @@ import { SlBasket } from "react-icons/sl";
 import "styles/information_products.css";
 
 function InformationProducts() {
-  const price = useSelector((state) => state.feature.price);
   const dispatch = useDispatch();
-  const featureItem = [
-    { id: 1, key: "حافظه داخلی", value: "250 گیگ" },
-    { id: 2, key: "حافظه رم", value: "250 گیگ" },
-    { id: 3, key: "تعداد سیم کارت", value: "250 گیگ" },
-    { id: 4, key: "بلوتوث", value: "250 گیگ" },
-    { id: 5, key: "حافظه داخلی", value: "250 گیگ" },
-  ];
+  const dataProduct = useSelector((state) => state.feature);
   const colorOption = [
     { value: "RED", label: "قرمز" },
     { value: "BLUE", label: "آبی" },
@@ -47,19 +40,17 @@ function InformationProducts() {
     <>
       <div className="information_products">
         <h1 className="information_products_title">
-          {"گوشی موبایل سامسونگ مدل S23"}
+          {dataProduct?.titleProduct}
         </h1>
       </div>
       <div className="information_products_description">
         <p className="information_products_description_text">
-          {
-            "گوشی موبایل سامسونگ مدل Galaxy S23 Ultra دو سیم کارت ظرفیت 256 گیگابایت و رم 12 گیگابایت"
-          }
+          {dataProduct?.descriptionProduct}
         </p>
       </div>
       <div className="information_products_title_item">
         <ul className="information_products_title_ul">
-          {featureItem?.map((item) => (
+          {dataProduct?.featureItem?.map((item) => (
             <li key={item.id}>
               <span className="information_products_title_key">{`${item.key} : `}</span>
               <span className="information_products_title_value">
@@ -96,13 +87,14 @@ function InformationProducts() {
         <hr />
         <div className="information_products_price">
           <div className="information_products_price_value">
-            <PriceLabelComponent price={price} />
+            <PriceLabelComponent price={dataProduct?.price} />
           </div>
           <div>
             <ButtonComponent
               size={"larg"}
               type={"primary"}
               className="information_products_button"
+              onClick={() => alert("به سبد خرید افزوده شد")}
             >
               <SlBasket size={23} />
               <span>{"افزودن به سبد خرید"}</span>
