@@ -26,7 +26,7 @@ const initialState = {
   comments: [
     { title: "محمدرضا", text: "بسیار خوب بود" },
     { title: "حسن", text: "با این قیمت نمی ارزد" },
-    { title: "تقی", text: "بسیار خوب بود" },
+    { title: "علی", text: "بسیار خوب بود" },
   ],
 };
 

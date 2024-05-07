@@ -1,9 +1,7 @@
 import React from "react";
 import { useKeenSlider } from "keen-slider/react";
-import "keen-slider/keen-slider.min.css";
-
 import iphone from "assets/images/iphone.png";
-
+import "keen-slider/keen-slider.min.css";
 import "styles/sliderProducts.css";
 
 function ManaSliderProducts() {

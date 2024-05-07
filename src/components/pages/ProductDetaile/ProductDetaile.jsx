@@ -19,7 +19,7 @@ function ProductDetaile() {
           <InformationProducts />
         </div>
       </div>
-      <p className="comment_title">دیدگاه کاربران</p>
+      <p className="comment_title">{"دیدگاه کاربران"}</p>
       <div>
         <AddForm />
         <Comments />
