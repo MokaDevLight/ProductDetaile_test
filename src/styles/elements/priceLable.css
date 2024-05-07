@@ -1,0 +1,14 @@
+.price_lable {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 5px;
+}
+.price_lable_number {
+  padding: 0 5px;
+  text-align: center;
+  font-weight: bold;
+}
+.toman {
+  padding-right: 5px;
+}
